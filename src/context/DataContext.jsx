@@ -38,6 +38,7 @@ export const DataProvider = ({children}) => {
     try{
       const response = await axios.get(`https://api.spoonacular.com/recipes/complexSearch?query=${search}&apiKey=d125c3c5592c437fae4e663b6dc853f7`)
       setRecipes(response.data.results)
+      if(!response.data.results.length) setRecipes(null)
       SetNetworkError(false)
     } catch(err){
       setRecipes(null)
