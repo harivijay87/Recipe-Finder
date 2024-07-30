@@ -19,7 +19,7 @@ const HomePage = () => {
         ? recipes.map((recipe) => (
             <RecipeCart recipe={recipe} key={recipe.id}/>
         ))
-        : <div className='loading'><img src="/recipe-finder/Loading.gif" alt="" /></div>
+        : <div className='loading'><img src="/Recipe-Finder/Loading.gif" alt="" /></div>
       }
       </div>)
       :

@@ -7,7 +7,7 @@ const Header = () => {
   return (
   <header>
     <div className='logo'>
-      <img src="/recipe-finder/App-logo.png" alt="" />
+      <img src="/Recipe-Finder/App-logo.png" alt="" />
       <h1 className='title'>Recipe Finder</h1>
     </div>
     <nav>

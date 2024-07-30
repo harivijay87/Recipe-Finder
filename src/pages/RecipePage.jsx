@@ -19,7 +19,7 @@ const RecipePage = () => {
     fetchRecipe();
   }, [])
 
-  if (!recipe) return <div className='loading'><img src="/recipe-finder/public/Loading.gif" alt="" /></div>
+  if (!recipe) return <div className='loading'><img src="/Recipe-Finder/public/Loading.gif" alt="" /></div>
 
   return (
 

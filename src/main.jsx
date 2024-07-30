@@ -6,7 +6,7 @@ import { BrowserRouter } from 'react-router-dom'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter basename='/recipe-finder/'>
+    <BrowserRouter basename='/Recipe-Finder/'>
       <App />
     </BrowserRouter>
   </React.StrictMode>
