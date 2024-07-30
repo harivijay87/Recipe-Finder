@@ -1,0 +1,22 @@
+.home-container,
+.favourite-container{
+  padding: 20px;
+  /* justify-content: center; */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.favourite-title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  font-family: odibee sans, roboto;
+  font-size: 3rem;
+  font-weight: bold;
+  background: var(--gradiant-color);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}

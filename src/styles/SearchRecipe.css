@@ -1,0 +1,90 @@
+form{
+  margin-top: 2%;
+  display: flex;
+  justify-content: center;
+  column-gap: 20px;
+  row-gap: 5px;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+form label{
+  font-family: odibee sans, roboto;
+  font-size: 2.5rem;
+  font-weight: bold;
+  background: var(--gradiant-color);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+form div{
+  display: flex;
+  border-radius: 3px;
+  overflow: hidden;
+}
+form div input{
+  padding: 0.5rem;
+  border: 3px solid;
+  background-color: white;
+  color: red;
+  font-size: 20px;
+  outline: transparent;
+  border-image: var(--gradiant-color) 1;
+}
+form div input::placeholder{
+  color: red;
+  font-size: 20px;
+  opacity: 80%;
+}
+form div button{
+  padding: 0px 10px;
+  margin-left: -3px;
+  background-color: transparent;
+  border: 3px solid;
+  border-image: var(--gradiant-color) 1;
+  background-color: white;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+form div button svg{
+  color: red;
+  width: 20px;
+  height: 20px;
+}
+
+@media (width < 550px){
+  form label{
+    font-size: 2rem;
+  }
+  form div input{
+    padding: 0.4rem;
+    font-size: 18px;
+  }
+  form div input::placeholder{
+    font-size: 18px;
+  }
+  form div button svg{
+    width: 17px;
+    height: 17px;
+  }
+}
+@media(width < 320px){
+  form{
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
+  form label{
+    font-size: 10vw;
+  }
+  form div input{
+    padding: 2vw;
+    font-size: 6vw;
+  }
+  form div input::placeholder{
+    font-size: 6vw;
+  }
+  form div button svg{
+    width: 5vw;
+    height: 5vw;
+  }
+}
